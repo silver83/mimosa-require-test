@@ -237,8 +237,8 @@ exports.config = {
                                 # watch.compiledDir, or absolute.  Paths are to compiled files,
                                 # so '.js' rather than '.coffee'	
 
-  lint:                      # settings for js, css linting/hinting
-    exclude:[ /.*ignoreThis.*/ ]               # array of strings or regexes that match files to not lint,
+  #lint:                      # settings for js, css linting/hinting
+    # exclude:[ /.*ignoreThis.*/ ]               # array of strings or regexes that match files to not lint,
                                # strings are paths that can be relative to the watch.compiledDir
                                # or absolute
     # compiled:                # settings for compiled files
