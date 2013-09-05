@@ -10,11 +10,9 @@ require.config
         '*':
             'path2': 'path1'
 
-require [ 'path2' ], (path2)->
-    console.log(path2 + ' loaded')
 
-require [ 'path1' ], (path1)->
-    console.log(path1 + ' loaded')
+require [ 'pkgTest' ], (pkgTest)->
+    console.log('pkgTest: ' + pkgTest)
 
-require [ 'package1' ], (pkg1)->
-    console.log(pkg1 + ' loaded')
+require [ 'mapTest' ], (mapTest)->
+    console.log('mapTest: ' + mapTest)
