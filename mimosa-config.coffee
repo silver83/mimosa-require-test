@@ -22,12 +22,12 @@ exports.config = {
   ###
   # modules: ['lint', 'server', 'require', 'minify', 'live-reload', 'bower']
 
-  # watch:
-    # sourceDir: "assets"                # directory location of web assets, can be relative to
+  watch:
+    sourceDir: "src"                # directory location of web assets, can be relative to
                                          # the project root, or absolute
     # compiledDir: "public"              # directory location of compiled web assets, can be
                                          # relative to the project root, or absolute
-    # javascriptDir: "javascripts"       # Location of precompiled javascript (i.e.
+    javascriptDir: ""       # Location of precompiled javascript (i.e.
                                          # coffeescript), must be relative to sourceDir
     # exclude: [/[/\\](\.|~)[^/\\]+$/]   # regexes or strings matching the files to be
                                          # ignored by mimosa, the default matches all sorts of
