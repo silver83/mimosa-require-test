@@ -5,17 +5,18 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <style>
-        body {
+        header {
           font-family: 'Tangerine', serif;
           font-size: 48px;
           text-shadow: 4px 4px 4px #aaa;
         }
     </style>
+    <script src='vendor/jquery.js' ></script>
 </head>
 <body>
-    This is just a test page for mimosa-require
-    <script src="vendor/require.js"></script>
-    <script src="main.js"></script>
+    <header>this is just a test page for mimosa-require</header>
+    <script data-main="main.js" src="vendor/require.js"></script>
 
+    <div id="result"></div>
 </body>
 </html>

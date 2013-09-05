@@ -10,9 +10,10 @@ require.config
         '*':
             'path2': 'path1'
 
+result = $('#result')
 
 require [ 'pkgTest' ], (pkgTest)->
-    console.log('pkgTest: ' + pkgTest)
+    result.append('pkgTest: ' + pkgTest + '<br/>')
 
 require [ 'mapTest' ], (mapTest)->
-    console.log('mapTest: ' + mapTest)
+    result.append('mapTest: ' + mapTest + '<br/>')

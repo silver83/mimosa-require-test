@@ -20,7 +20,7 @@ exports.config = {
   'mimosa-' that preceeds all Mimosa module names is assumed, however you can use it if you
   want. If a module is listed here that Mimosa is unaware of, Mimosa will attempt to install it.
   ###
-  # modules: ['lint', 'server', 'require', 'minify', 'live-reload', 'bower']
+  modules: ['require']
 
   watch:
     sourceDir: "src"                # directory location of web assets, can be relative to
@@ -50,10 +50,10 @@ exports.config = {
     # interval: 100                      # Interval of file system polling.
     # binaryInterval: 300                # Interval of file system polling for binary files
 
-  # vendor:                              # settings for vendor assets
-    # javascripts: "javascripts/vendor"  # location, relative to the watch.sourceDir, of vendor
+  vendor:                              # settings for vendor assets
+    javascripts: "vendor"  # location, relative to the watch.sourceDir, of vendor
                                          # javascript assets. Unix style slashes please.
-    # stylesheets: "stylesheets/vendor"  # location, relative to the watch.sourceDir, of vendor
+    stylesheets: "vendor"  # location, relative to the watch.sourceDir, of vendor
                                          # stylesheet assets. Unix style slashes please.
 
 
