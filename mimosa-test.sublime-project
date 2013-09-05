@@ -1,0 +1,11 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/yoni/Code/tests/mimosa-test",
+			"file_exclude_patterns": ["cache.data"],
+			"folder_exclude_patterns": ["htmlContainer/dist", "node_modules", ".*"]
+		}
+	]
+}

@@ -55,7 +55,7 @@ exports.config = {
                                          # javascript assets. Unix style slashes please.
     # stylesheets: "stylesheets/vendor"  # location, relative to the watch.sourceDir, of vendor
                                          # stylesheet assets. Unix style slashes please.
-	
+
 
   # compilers:
     # extensionOverrides:       # A list of extension overrides, format is:
@@ -163,7 +163,7 @@ exports.config = {
   # the extensions of files to copy from sourceDir to compiledDir. vendor js/css, images, etc.
   ###
   # copy:
-    # extensions: ["js","css","png","jpg","jpeg","gif","html","eot","svg","ttf","woff","otf","yaml","kml","ico","htc","htm","json","txt","xml","xsd","map","md"]	
+    # extensions: ["js","css","png","jpg","jpeg","gif","html","eot","svg","ttf","woff","otf","yaml","kml","ico","htc","htm","json","txt","xml","xsd","map","md"]
 
   # growl:
     # onStartup: false       # Controls whether or not to Growl when assets successfully
@@ -176,7 +176,7 @@ exports.config = {
       # javascript: true     # growl on successful compilation? will always send on failure
       # css: true            # growl on successful compilation? will always send on failure
       # template: true       # growl on successful compilation? will always send on failure
-      # copy: true           # growl on successful copy?	
+      # copy: true           # growl on successful copy?
 
   server:                      # configuration for server when server option is enabled via CLI
     defaultServer:
@@ -194,10 +194,10 @@ exports.config = {
       compileWith: 'hogan'      # Valid options: "jade", "hogan", "html", "ejs", "handlebars", "dust".
                                  # The compiler for your views.
       extension: 'hjs'        # extension of your server views
-      # path: 'views'            # This is the path to project views, it can be absolute or
+      path: 'src/views'            # This is the path to project views, it can be absolute or
                                  # relative. If defaultServer.enabled is true, it is relative to the
                                  # root of the project. If defaultServer.enabled is false it is
-                                 # relative to the server.path setting above.	
+                                 # relative to the server.path setting above.
 
   # require:                 # configuration for requirejs options.
     # exclude:[]             # Regex or string paths. Paths can be absolute or relative to the
@@ -226,7 +226,7 @@ exports.config = {
                              #
                              # overrides can also be a function that takes mimosa-require's
                              # inferred config for each module. This allows the inferred config
-                             # to be updated and enhanced instead of just overridden.	
+                             # to be updated and enhanced instead of just overridden.
 
   # minify:                     # Configuration for non-require minification/compression via
                                 # uglify using the --minify flag.
@@ -235,7 +235,7 @@ exports.config = {
                                 # like jquery.min.js, is assumed to already be minified and is
                                 # ignored by default. Paths can be relative to the
                                 # watch.compiledDir, or absolute.  Paths are to compiled files,
-                                # so '.js' rather than '.coffee'	
+                                # so '.js' rather than '.coffee'
 
   #lint:                      # settings for js, css linting/hinting
     # exclude:[ /.*ignoreThis.*/ ]               # array of strings or regexes that match files to not lint,
@@ -262,14 +262,14 @@ exports.config = {
                                # override any settings set up in the jshintrc
         # plusplus: true       # This is an example override, this is not a default
       # css:                   # Settings: https://github.com/stubbornella/csslint/wiki/Rules
-        # floats: false        # This is an example override, this is not a default	
+        # floats: false        # This is an example override, this is not a default
 
   # liveReload:                   # Configuration for live-reload
     # enabled:true                # Whether or not live-reload is enabled
     # additionalDirs:["views"]    # Additional directories outside the watch.compiledDir
                                   # that you would like to have trigger a page refresh,
                                   # like, by default, static views. Is string path,
-                                  # can be relative to project root, or absolute	
+                                  # can be relative to project root, or absolute
 
   # bower:                        # Configuration for bower module
     # watch: true                 # Whether or not to watch the bower.json file to automatically
