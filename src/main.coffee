@@ -6,14 +6,19 @@ require.config
     ]
     paths:
         'path1': 'paths/path1'
+        '$': 'vendor/jquery'
     map:
         '*':
-            'path2': 'path1'
+            'path3': 'path1'
+    shim:
+        'vendor/jquery':
+            exports: '$'
 
-result = $('#result')
+require [ '$' ], ->
+    result = $('#result')
 
-require [ 'pkgTest' ], (pkgTest)->
-    result.append('pkgTest: ' + pkgTest + '<br/>')
+    require [ 'pkgTest' ], (pkgTest)->
+        result.append('pkgTest: ' + pkgTest + '<br/>')
 
-require [ 'mapTest' ], (mapTest)->
-    result.append('mapTest: ' + mapTest + '<br/>')
+    require [ 'mapTest' ], (mapTest)->
+        result.append('mapTest: ' + mapTest + '<br/>')

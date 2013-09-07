@@ -1,5 +1,5 @@
 exports.config = {
-  modules: ['require']
+  modules: ['require', 'server']
 
   watch:
     sourceDir: "src"                # directory location of web assets, can be relative to
