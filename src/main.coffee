@@ -22,3 +22,6 @@ require [ '$' ], ->
 
     require [ 'mapTest' ], (mapTest)->
         result.append('mapTest: ' + mapTest + '<br/>')
+
+    require [ 'package1/pkgPrefixDep' ], (pkgPrefixDep)->
+        result.append('pkgPrefixDepTest: ' + pkgPrefixDep + '<br/>')

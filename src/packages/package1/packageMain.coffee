@@ -1,2 +1,2 @@
-define [], ->
-    'package1'
+define [ "./packageDep" ], (dep)->
+    'packageMain + ' + dep

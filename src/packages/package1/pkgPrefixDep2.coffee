@@ -1,0 +1,2 @@
+define [], ()->
+	return "pkgPrefixDep2"
